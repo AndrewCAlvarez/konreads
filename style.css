@@ -214,6 +214,13 @@ a {
 .icon--social {
   font-size: 3.2rem;
 }
+
+.text--lg {
+  font-size: 6.2rem;
+  color: var(--grey-color-darker);
+  display: inline;
+  line-height: 0rem;
+}
 /********************************************
 *
 *
@@ -311,6 +318,24 @@ a {
   line-height: 2;
   position: relative;
   width: 70%;
+}
+
+.post-body {
+  grid-template-columns: 3fr 1fr;
+}
+
+.post-text {
+  font-size: 2rem;
+  line-height: 2;
+  color: var(--main-grey-color);
+  letter-spacing: 0.2rem;
+  margin-bottom: 4rem;
+}
+
+.post-quote {
+  font-size: 5.2rem;
+  color: var(--grey-color-darker);
+  margin-bottom: 4rem;
 }
 
 /********************************************
