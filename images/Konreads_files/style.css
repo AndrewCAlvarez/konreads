@@ -1,0 +1,215 @@
+/* 
+
+Type scale system 
+Use 20px for normal text when using a blog.
+12.8px 16px 20px 25px 32px 39px 48px 62px
+
+Color Palette
+Red  - #c92a2a
+grey - #f1f3f5
+Steal Teal - #099268
+violet1 - #e5dbff
+Black - #212529
+*/
+
+:root {
+  --main-bg-color: #343a40;
+  --main-grey-color: #f1f3f5;
+  --grey-color-darker: #adb5bd;
+  --nav-color: #212529;
+  --accent-color: #c92a2a;
+  --violet-color: #e5dbff;
+  --teal: #099268;
+  --yellow-color: #fcc419;
+  --yellow-color-lighter: #fff3bf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid var(--yellow-color); */
+}
+
+/* GENERAL STYLES */
+body {
+  font-family: "Playfair Display", serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-grey-color);
+  margin-top: 72px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-grey-color);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-2-rows {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
+  column-gap: 82px;
+}
+
+.grid-5-cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* NAVIGATION */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  padding: 0 5%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--nav-color);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 150px;
+  font-size: 20px;
+}
+
+nav a {
+  /* color: var(--yellow-color-lighter); */
+}
+
+.nav-title {
+  font-size: 31.25px;
+  font-weight: 600;
+}
+
+/* HEADER */
+
+h1 {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.1rem;
+  color: var(--yellow-color);
+}
+
+/* POST */
+
+.post-header {
+  grid-column: 1 / -1;
+}
+
+.post-title {
+  grid-column: 1 / -1;
+}
+
+.post-details {
+  /* display: flex;
+  align-items: flex-end;
+  gap: 25px; */
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+}
+
+.post-author-image {
+  width: 50px;
+  border-radius: 1px;
+}
+
+.post-link:visited,
+.post-link:link {
+  text-decoration: none;
+  color: var(--main-grey-color);
+}
+
+.post-link:active,
+.post-link:hover {
+  color: var(--accent-color);
+}
+
+.post-subject {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: var(--yellow-color-lighter);
+}
+
+.post-img {
+  border-radius: 5px;
+}
+
+.post-heading {
+  /* color: var(--yellow-color); */
+}
+
+.post-description {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--grey-color-darker);
+}
+
+.post-content {
+  grid-column: 1 / 3;
+
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+.post-content p {
+  margin-bottom: 32px;
+}
+
+.post-quote {
+  font-size: 48px;
+  color: var(--grey-color-darker);
+}
+
+/* MISC */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.25;
+  width: 100%;
+  /* height: 638.5px; */
+
+  /* opacity: 0.25; */
+}
+
+/* ASIDE */
+
+aside {
+  border-bottom: 5px solid var(--yellow-color);
+  grid-column: 3 / 4;
+  align-self: start;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

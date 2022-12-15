@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    
+    
+    <title>Omnifood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="Omnifood_files/css2.css" rel="stylesheet"><link rel="stylesheet" href="Omnifood_files/general.css"><link rel="stylesheet" href="Omnifood_files/style.css"></head>
+  <body>
+    <header class="header">
+      <img class="logo" src="Omnifood_files/omnifood-logo.png" alt="Omnifood logo">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">Section 1</a></li>
+          <li><a href="#" class="main-nav-link">Section 2</a></li>
+          <li><a href="#" class="main-nav-link">Section 3</a></li>
+          <li><a href="#" class="main-nav-link">Section 4</a></li>
+          <li><a href="#" class="main-nav-link nav-cta">Section 5</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              A healthy meal delivered to your door, every single day
+            </h1>
+            <p class="hero-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+            <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
+            <a href="#" class="btn btn--outline">Learn more ↓</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="Omnifood_files/customer-1.jpg" alt="Customer photo">
+                <img src="Omnifood_files/customer-2.jpg" alt="Customer photo">
+                <img src="Omnifood_files/customer-3.jpg" alt="Customer photo">
+                <img src="Omnifood_files/customer-4.jpg" alt="Customer photo">
+                <img src="Omnifood_files/customer-5.jpg" alt="Customer photo">
+                <img src="Omnifood_files/customer-6.jpg" alt="Customer photo">
+              </div>
+              <p class="delivered-text">
+                <span>250,000+</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img src="Omnifood_files/hero.png" alt="Woman enjoying food, meals in storage container and food bowls on a table" class="hero-img">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-how">
+        <div class="container">
+          <span class="sub-heading">How it works</span>
+          <h2 class="heading-secondary">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </div>
+
+        <!-- STEP 01 -->
+        <div class="container grid grid--2-cols">
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">
+              Tell us what you like (and what not)
+            </h3>
+            <p class="step-description">
+              Never again waste time thinking about what to eat! Omnifood AI
+              will create a 100% personalized weekly meal plan just for you. It
+              makes sure you get all the nutrients and vitamins you need, no
+              matter what diet you follow!
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img class="step-img" src="Omnifood_files/app-screen-1.png" alt="Iphone app preferences selection screen">
+          </div>
+        </div>
+
+        <!-- STEP 02 -->
+        <div class="container grid grid--2-cols">
+          <div class="step-img-box">
+            <img class="step-img" src="Omnifood_files/app-screen-2.png" alt="Meal approving plan">
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+            <p class="step-description">
+              Once per week, approve the meal plan generated for you by Omnifood
+              AI. You can change ingredients, swap entire meals, or even add
+              your own recipes.
+            </p>
+          </div>
+        </div>
+
+        <!-- STEP 03 -->
+        <div class="container grid grid--2-cols" style="align-items: center;">
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Receive meals at a convenient time</h3>
+            <p class="step-description">
+              Best chefs in town will cook your selected meal every day, and we
+              will deliver it to your door whenever works best for you. You can
+              change delivery schedule and address daily!
+            </p>
+          </div>
+
+          <div class="step-img-box">
+            <img class="step-img" src="Omnifood_files/app-screen-3.png" alt="Meal approving plan">
+          </div>
+        </div>
+      </section>
+    </main>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
