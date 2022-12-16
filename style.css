@@ -66,6 +66,7 @@ Spacing (px)
   --secondary-color: #bc3908;
   --tertiary-color: #857c8d;
   --yellow-color: #fcc419;
+  --yellow-color-light: #fdd65e;
   --yellow-color-lighter: #fff3bf;
 }
 
@@ -508,10 +509,14 @@ a {
 }
 
 .about {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
+
+/* .about div {
+  height: 90rem;
+} */
 
 .heading--about {
   font-size: 10rem;
@@ -522,9 +527,10 @@ a {
 
 .about-text {
   font-size: 2rem;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   color: var(--yellow-color-lighter);
   line-height: 2;
+  text-indent: 2rem;
 }
 
 .about-img {
@@ -534,8 +540,32 @@ a {
   /* transform: translate(50%, -50%); */
 }
 
+.about-img-square {
+  width: 25%;
+  height: 25%;
+}
+
 .about-img-long img {
   width: 100%;
+}
+
+.about-img-long p {
+  color: #fee28c;
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+
+.about-circle-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.about-circle-black {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--main-bg-color);
 }
 
 /* ASIDE */
