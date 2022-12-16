@@ -11,71 +11,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./articles.css" />
     <title>Konreads</title>
   </head>
   <body>
-    <!-- <img
-      class="background-image"
-      src="./images/books_4256x2554.jpg"
-      alt="Random assorted books stacked on dimly lit desk in personal library"
-    /> -->
+    <!-- HEADER -->
+    <header class="section-header container">
+      <div class="nav-title">
+        <a class="link link--logo" href="index.html">Konreads</a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a class="link link--nav" href="./articles.html">Articles</a></li>
+          <li>
+            <a class="link link--nav" href="./index.html#section-about"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <main>
-      <!-----------------------------------------
-      HERO SECTION
-      -------------------------------------------->
-      <header class="section-header container">
-        <div class="nav-title">
-          <a class="link link--logo" href="index.html">Konreads</a>
-        </div>
-        <nav class="nav">
-          <ul>
-            <li>
-              <a class="link link--nav" href="./articles.html">Articles</a>
-            </li>
-            <li><a class="link link--nav" href="#section-about">About</a></li>
-          </ul>
-        </nav>
-      </header>
-      <section class="hero margin-btm-lg">
-        <div class="container post--hero">
-          <div class="margin-btm-md">
-            <h3 class="tag tag--hero">Books</h3>
-            <a href="./post.html">
-              <h1 class="heading--primary link">Brave New World</h1>
-              <p class="book-author">By Aldous Huxley</p>
-            </a>
-          </div>
-          <div class="post-author">
-            <img
-              class="post-author-image"
-              src="./images/squid icon.jpg"
-              alt="Abstract black and white image for author profile picture"
-            />
-            <div class="post-author-text">
-              <p>Alistair Konrad</p>
-              <span class="span-slash">/</span>
-              <p>Nov 11th, 2022</p>
-            </div>
-          </div>
+    <section class="section-articles">
+      <div class="container articles-title">
+        <p class="heading--primary">More Articles</p>
+      </div>
 
-          <p class="post-text--hero margin-btm-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            veniam quibusdam asperiores sit cupiditate nesciunt fuga provident
-            saepe aliquid! Atque dolorem est architecto fuga praesentium magnam,
-            doloribus quae, eveniet beatae esse ex eaque commodi provident,
-            tempore totam quidem quas maiores fugiat sint corporis dolor hic.
-            Odio reprehenderit velit aliquam numquam.
-          </p>
-
-          <a class="link link--nav link--continue" href="./post.html"
-            >Continue reading &rarr;</a
-          >
-        </div>
-      </section>
-      <!-----------------------------------------
-      FEATURED SECTION
-      -------------------------------------------->
+      <!-- Articles List -->
       <section
         class="section-featured container grid grid--2-cols margin-btm-lg"
       >
@@ -163,41 +125,27 @@
         </a>
       </section>
 
-      <!-----------------------------------------
-      ABOUT SECTION
-      -------------------------------------------->
-      <a id="section-about"></a>
-      <section class="section-about grid grid--2-cols container margin-btm-lg">
-        <div class="about-img-long">
-          <img
-            src="./images/stock/scary-bookshelf.jpg"
-            alt="Dimly lit desk with lamp, stacked books and water victorian water pitcher"
-          />
-        </div>
-        <div class="about">
-          <p class="about-text">
-            <span class="heading--about">Who </span>
-            is Alistair Konrad? ipsum dolor, sit amet consectetur adipisicing
-            elit. Eum et praesentium beatae, dignissimos natus tempore voluptas
-            cum optio error culpa ex nesciunt dicta nisi, officia molestiae
-            fugiat inventore omnis sed consectetur dolorum esse repellendus
-            voluptatibus tenetur! Ratione iure dicta veritatis, unde inventore
-            perferendis. Quibusdam praesentium odit officiis, quas numquam quod.
-          </p>
-          <div>
-            <img
-              class="about-img"
-              src="./images/stock/scattered-books-cropped.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-    </main>
+      <!-- ARTICLES PAGINATION -->
+      <div class="container">
+        <ul class="pagination flex">
+          <li>
+            <a class="icon link pagination-item" href="#">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+          </li>
+          <li class="link pagination-item">
+            <a class="icon link pagination-item" href="#"> 1 </a>
+          </li>
+          <li>
+            <a class="icon link pagination-item" href="#">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <!-----------------------------------------
-      FOOTER SECTION
-      -------------------------------------------->
+    <!-- FOOTER -->
     <footer class="container footer margin-btm-lg">
       <ul class="list--social">
         <li>
@@ -220,6 +168,9 @@
           <a class="link link--footer" href="./index.html#section-about"
             >About</a
           >
+        </li>
+        <li>
+          <a class="link link--footer" href="#">artbymilkyinc@gmail.com</a>
         </li>
       </ul>
     </footer>

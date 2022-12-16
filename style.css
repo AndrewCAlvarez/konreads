@@ -87,6 +87,7 @@ body {
   font-family: "Playfair Display", serif;
   background-color: var(--main-bg-color);
   color: var(--main-grey-color);
+  font-size: 1.8rem;
 }
 
 a {
@@ -113,6 +114,10 @@ a {
 
 .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
+}
+
+.flex {
+  display: flex;
 }
 
 .link:link,
@@ -169,6 +174,17 @@ a {
   color: var(--yellow-color-lighter);
 }
 
+.link--footer:link,
+.link--footer:visited {
+  color: var(--grey-color-darker);
+  transition: all 0.3s;
+}
+
+.link--footer:hover,
+.link--footer:active {
+  color: var(--yellow-color-lighter);
+}
+
 .margin-btm-md {
   margin-bottom: 3.2rem;
 }
@@ -211,16 +227,49 @@ a {
   font-size: 1.8rem;
 }
 
+.icon {
+  color: var(--yellow-color-lighter);
+}
+
 .icon--social {
   font-size: 3.2rem;
 }
 
 .text--lg {
-  font-size: 6.2rem;
+  font-size: 4rem;
   color: var(--grey-color-darker);
   display: inline;
   line-height: 0rem;
 }
+
+.text--highlight {
+  color: var(--yellow-color-lighter);
+  /* text-decoration: underline;
+  text-decoration-color: var(--accent-color); */
+}
+
+.span-quotation {
+  color: var(--accent-color);
+}
+
+.pagination {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  list-style: none;
+
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pagination li a {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /********************************************
 *
 *
@@ -280,6 +329,18 @@ a {
   padding-top: 7.4rem;
 }
 
+.post-header {
+  padding-top: 7.4rem;
+  margin-bottom: 12rem;
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.652),
+      rgba(17, 17, 17, 1)
+    ),
+    url(./images/stock/annie-spratt-lIWF2uHxs0Q-unsplash.jpg);
+  background-size: cover;
+  height: 35vh;
+}
+
 .book-author {
   font-size: 3.2rem;
 }
@@ -313,7 +374,7 @@ a {
 }
 
 .post-text--hero {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--grey-color-darker);
   line-height: 2;
   position: relative;
@@ -321,21 +382,47 @@ a {
 }
 
 .post-body {
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 6.4rem;
+  margin-bottom: 3.2rem;
 }
 
 .post-text {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   line-height: 2;
   color: var(--main-grey-color);
   letter-spacing: 0.2rem;
   margin-bottom: 4rem;
+  text-indent: 2rem;
+  width: 80%;
 }
 
 .post-quote {
-  font-size: 5.2rem;
-  color: var(--grey-color-darker);
+  font-size: 4rem;
+  width: 80%;
+  /* color: var(--grey-color-darker); */
+  color: var(--yellow-color-lighter);
   margin-bottom: 4rem;
+  /* text-decoration: underline;
+  text-decoration-color: var(--accent-color); */
+}
+
+/********************************************
+*
+*
+*  HERO SECTION
+*
+*
+********************************************/
+
+.section-post {
+  background-image: linear-gradient(
+      rgba(17, 17, 17, 0.652),
+      rgba(17, 17, 17, 1)
+    ),
+    url(./images/stock/annie-spratt-lIWF2uHxs0Q-unsplash.jpg);
+  background-size: cover;
+  height: 63vh;
 }
 
 /********************************************
@@ -385,6 +472,27 @@ a {
 /********************************************
 *
 *
+*  ASIDE SECTION
+*
+*
+********************************************/
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  border-bottom: 1px solid var(--yellow-color-lighter);
+  height: max-content;
+  padding-bottom: 4rem;
+}
+
+.aside-title {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--yellow-color-lighter);
+}
+
+/********************************************
+*
+*
 *  ABOUT SECTION
 *
 *
@@ -422,6 +530,7 @@ a {
 .about-img {
   /* justify-items: start; */
   width: 100%;
+
   /* transform: translate(50%, -50%); */
 }
 
@@ -451,9 +560,10 @@ aside {
 
 .footer {
   /* box-shadow: 0 -1px 0 5px rgba(241, 243, 245, 0.485); */
-  font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid var(--yellow-color-lighter);
+  padding-top: 6.4rem;
 }
 
 .list--social {
@@ -471,9 +581,4 @@ aside {
   justify-content: center;
   gap: 3.2rem;
   font-size: 2rem;
-}
-
-.link--footer:link,
-.link--footer:visited {
-  color: var(--grey-color-darker);
 }

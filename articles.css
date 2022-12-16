@@ -1,0 +1,22 @@
+/********************************************
+*
+*
+*  ARTICLES SECTION
+*
+*
+********************************************/
+
+.section-articles {
+  /* background-image: linear-gradient(
+      rgba(17, 17, 17, 0.236),
+      rgba(17, 17, 17, 1)
+    ),
+    url(./images/stock/cameron-stewart-jo9eYA750V0-unsplash.jpg);
+  background-size: cover;
+  height: 40vh; */
+}
+
+.articles-title {
+  padding-top: 7.4rem;
+  margin-bottom: 12rem;
+}
