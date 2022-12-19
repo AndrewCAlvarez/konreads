@@ -280,6 +280,7 @@ a {
 ********************************************/
 .section-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 2.4rem 0;
@@ -307,6 +308,18 @@ a {
 }
 
 .icon-menu {
+  font-size: 3.6rem;
+  border: none;
+  background-color: var(--main-bg-color);
+  color: var(--main-grey-color);
+
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-close {
   font-size: 3.6rem;
   border: none;
   background-color: var(--main-bg-color);

@@ -191,6 +191,14 @@ Spacing (px)
 @media (max-width: 668px) {
   .nav {
     display: none;
+    margin-top: 4rem;
+    width: 100%;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
   }
 
   .icon-menu {
