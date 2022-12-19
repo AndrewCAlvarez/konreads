@@ -284,10 +284,8 @@ a {
   justify-content: space-between;
   padding: 2.4rem 0;
   background-color: rgba(17, 17, 17, 0.5);
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; */
+  /* width: 100%; */
+  /* overflow: hidden; */
 }
 
 .nav ul {
@@ -306,6 +304,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.icon-menu {
+  font-size: 3.6rem;
+  border: none;
+  background-color: var(--main-bg-color);
+  color: var(--main-grey-color);
+
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
 }
 
 /********************************************
@@ -499,19 +509,14 @@ a {
 *
 ********************************************/
 .section-about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
   background-color: var(--secondary-color);
   color: var(--main-bg-color);
   border-radius: 5px;
-  /* padding-right: 1.2rem;
-  padding-bottom: 1.2rem; */
   padding: 1.2rem;
   gap: 1.2rem;
-}
-
-.about {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
 }
 
 /* .about div {
@@ -531,41 +536,30 @@ a {
   color: var(--yellow-color-lighter);
   line-height: 2;
   text-indent: 2rem;
+  align-self: center;
 }
 
 .about-img {
+  align-self: center;
+  justify-content: center;
+}
+
+.about-img img {
   /* justify-items: start; */
   width: 100%;
 
+  /* display: block; */
   /* transform: translate(50%, -50%); */
 }
 
-.about-img-square {
-  width: 25%;
-  height: 25%;
-}
-
-.about-img-long img {
-  width: 100%;
+.about-img-long {
+  height: 100%;
 }
 
 .about-img-long p {
   color: #fee28c;
   line-height: 1.5;
   font-size: 1.6rem;
-}
-
-.about-circle-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 4rem;
-}
-
-.about-circle-black {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  background-color: var(--main-bg-color);
 }
 
 /* ASIDE */
@@ -591,21 +585,28 @@ aside {
 .footer {
   /* box-shadow: 0 -1px 0 5px rgba(241, 243, 245, 0.485); */
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 4rem;
+  align-items: center;
+  /* align-items: center;
+  justify-content: center; */
   border-top: 1px solid var(--yellow-color-lighter);
   padding-top: 6.4rem;
+  color: var(--grey-color-darker);
 }
 
 .list--social {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 3.2rem;
   list-style-type: none;
 }
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: center;
   justify-content: center;
