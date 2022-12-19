@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
     <title>Konreads</title>
   </head>
   <body>
@@ -19,14 +20,17 @@
       <div class="nav-title">
         <a class="link link--logo" href="index.html">Konreads</a>
       </div>
+
+      <button class="icon-menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
       <nav class="nav">
         <ul>
-          <li><a class="link link--nav" href="./articles.html">Articles</a></li>
           <li>
-            <a class="link link--nav" href="./index.html#section-about"
-              >About</a
-            >
+            <a class="link link--nav" href="./articles.html">Articles</a>
           </li>
+          <li><a class="link link--nav" href="#section-about">About</a></li>
         </ul>
       </nav>
     </header>
@@ -56,155 +60,147 @@
 
     <!-- POST BODY -->
     <section class="post-body container grid grid--2-cols">
-        <!-- POST CONTENT -->
-        <div>
-          <p class="post-text">
-            <span class="text--lg text--highlight">Lorem</span> ipsum dolor sit
-            amet consectetur adipisicing elit. Temporibus voluptas deserunt, at
-            quod corporis omnis magni recusandae ab qui mollitia culpa vero
-            quasi modi? Perspiciatis cum qui et commodi quia, sint beatae eius
-            amet quaerat. Illum voluptatum id nobis omnis, reprehenderit quo
-            iusto quod quidem provident dicta sapiente corporis repellat
-            repudiandae nisi praesentium vitae fugiat quasi rem similique!
-            Necessitatibus, facere in vel maiores voluptate, obcaecati modi,
-            distinctio suscipit cum aspernatur rerum ab minima quod facilis
-            reprehenderit beatae sapiente fugiat dolore? Delectus excepturi
-            beatae rerum necessitatibus ipsa nemo possimus aut consectetur!
-            Perspiciatis voluptatem totam, rerum est quibusdam nisi deserunt
-            architecto itaque?
-          </p>
+      <!-- POST CONTENT -->
+      <div class="post-content">
+        <p class="post-text">
+          <span class="text--lg text--highlight">Lorem</span> ipsum dolor sit
+          amet consectetur adipisicing elit. Temporibus voluptas deserunt, at
+          quod corporis omnis magni recusandae ab qui mollitia culpa vero quasi
+          modi? Perspiciatis cum qui et commodi quia, sint beatae eius amet
+          quaerat. Illum voluptatum id nobis omnis, reprehenderit quo iusto quod
+          quidem provident dicta sapiente corporis repellat repudiandae nisi
+          praesentium vitae fugiat quasi rem similique! Necessitatibus, facere
+          in vel maiores voluptate, obcaecati modi, distinctio suscipit cum
+          aspernatur rerum ab minima quod facilis reprehenderit beatae sapiente
+          fugiat dolore? Delectus excepturi beatae rerum necessitatibus ipsa
+          nemo possimus aut consectetur! Perspiciatis voluptatem totam, rerum
+          est quibusdam nisi deserunt architecto itaque?
+        </p>
 
-          <p class="post-quote">
-            <span class="text--lg span-quotation">"</span>Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Perferendis, corporis.<span
-              class="text--lg span-quotation"
-              >"</span
-            >
-          </p>
+        <p class="post-quote">
+          <span class="text--lg span-quotation">"</span>Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Perferendis, corporis.<span
+            class="text--lg span-quotation"
+            >"</span
+          >
+        </p>
 
-          <p class="post-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            voluptas deserunt, at quod corporis omnis magni recusandae ab qui
-            mollitia culpa vero quasi modi? Perspiciatis cum qui et commodi
-            quia, sint beatae eius amet quaerat. Illum voluptatum id nobis
-            omnis, reprehenderit quo iusto quod quidem provident dicta sapiente
-            corporis repellat repudiandae nisi praesentium vitae fugiat quasi
-            rem similique! Necessitatibus, facere in vel maiores voluptate,
-            obcaecati modi, distinctio suscipit cum aspernatur rerum ab minima
-            quod facilis reprehenderit beatae sapiente fugiat dolore? Delectus
-            excepturi beatae rerum necessitatibus ipsa nemo possimus aut
-            consectetur! Perspiciatis voluptatem totam, rerum est quibusdam nisi
-            deserunt architecto itaque?
-          </p>
+        <p class="post-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          voluptas deserunt, at quod corporis omnis magni recusandae ab qui
+          mollitia culpa vero quasi modi? Perspiciatis cum qui et commodi quia,
+          sint beatae eius amet quaerat. Illum voluptatum id nobis omnis,
+          reprehenderit quo iusto quod quidem provident dicta sapiente corporis
+          repellat repudiandae nisi praesentium vitae fugiat quasi rem
+          similique! Necessitatibus, facere in vel maiores voluptate, obcaecati
+          modi, distinctio suscipit cum aspernatur rerum ab minima quod facilis
+          reprehenderit beatae sapiente fugiat dolore? Delectus excepturi beatae
+          rerum necessitatibus ipsa nemo possimus aut consectetur! Perspiciatis
+          voluptatem totam, rerum est quibusdam nisi deserunt architecto itaque?
+        </p>
 
-          <p class="post-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            voluptas deserunt, at quod corporis omnis magni recusandae ab qui
-            mollitia culpa vero quasi modi? Perspiciatis cum qui et commodi
-            quia, sint beatae eius amet quaerat. Illum voluptatum id nobis
-            omnis, reprehenderit quo iusto quod quidem provident dicta sapiente
-            corporis repellat repudiandae nisi praesentium vitae fugiat quasi
-            rem similique! Necessitatibus, facere in vel maiores voluptate,
-            obcaecati modi, distinctio suscipit cum aspernatur rerum ab minima
-            quod facilis reprehenderit beatae sapiente fugiat dolore? Delectus
-            excepturi beatae rerum necessitatibus ipsa nemo possimus aut
-            consectetur! Perspiciatis voluptatem totam, rerum est quibusdam nisi
-            deserunt architecto itaque?
-          </p>
+        <p class="post-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          voluptas deserunt, at quod corporis omnis magni recusandae ab qui
+          mollitia culpa vero quasi modi? Perspiciatis cum qui et commodi quia,
+          sint beatae eius amet quaerat. Illum voluptatum id nobis omnis,
+          reprehenderit quo iusto quod quidem provident dicta sapiente corporis
+          repellat repudiandae nisi praesentium vitae fugiat quasi rem
+          similique! Necessitatibus, facere in vel maiores voluptate, obcaecati
+          modi, distinctio suscipit cum aspernatur rerum ab minima quod facilis
+          reprehenderit beatae sapiente fugiat dolore? Delectus excepturi beatae
+          rerum necessitatibus ipsa nemo possimus aut consectetur! Perspiciatis
+          voluptatem totam, rerum est quibusdam nisi deserunt architecto itaque?
+        </p>
 
-          <p class="post-quote">
-            <span class="text--lg span-quotation">"</span>Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Perferendis, corporis.<span
-              class="text--lg span-quotation"
-              >"</span
-            >
-          </p>
+        <p class="post-quote">
+          <span class="text--lg span-quotation">"</span>Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Perferendis, corporis.<span
+            class="text--lg span-quotation"
+            >"</span
+          >
+        </p>
 
-          <p class="post-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            voluptas deserunt, at quod corporis omnis magni recusandae ab qui
-            mollitia culpa vero quasi modi? Perspiciatis cum qui et commodi
-            quia, sint beatae eius amet quaerat. Illum voluptatum id nobis
-            omnis, reprehenderit quo iusto quod quidem provident dicta sapiente
-            corporis repellat repudiandae nisi praesentium vitae fugiat quasi
-            rem similique! Necessitatibus, facere in vel maiores voluptate,
-            obcaecati modi, distinctio suscipit cum aspernatur rerum ab minima
-            quod facilis reprehenderit beatae sapiente fugiat dolore? Delectus
-            excepturi beatae rerum necessitatibus ipsa nemo possimus aut
-            consectetur! Perspiciatis voluptatem totam, rerum est quibusdam nisi
-            deserunt architecto itaque?
-          </p>
-        </div>
-
-        <!-- ASIDE -->
-        <section class="section-featured container margin-btm-lg aside">
-          <div class="aside-title">
-            <p class="heading--tertiary">Featured Articles</p>
-          </div>
-          <a href="#">
-            <div class="featured-item">
-              <div class="featured-heading">
-                <h3 class="tag">Books</h3>
-                <p class="heading--tertiary featured-title">Dracula</p>
-                <p class="featured-author">By Bram Stoker</p>
-              </div>
-              <p class="featured-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Maiores odio quos nostrum rem sed voluptate blanditiis enim
-                dolorem quibusdam deleniti.
-              </p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="featured-item">
-              <div class="featured-heading">
-                <h3 class="tag">Books</h3>
-                <p class="heading--tertiary featured-title">
-                  A Tale of Two Cities
-                </p>
-                <p class="featured-author">By Charles Dickens</p>
-              </div>
-              <p class="featured-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
-                repellat at cum esse odit consectetur possimus iste eum saepe
-                rem!
-              </p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="featured-item">
-              <div class="featured-heading">
-                <h3 class="tag">Books</h3>
-                <p class="heading--tertiary featured-title">
-                  Notes from Underground
-                </p>
-                <p class="featured-author">By Fyodor Dostoevsky</p>
-              </div>
-              <p class="featured-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                odio ratione? Voluptates vero cumque reiciendis quidem ratione
-                sed minus corporis?
-              </p>
-            </div>
-          </a>
-          <a href="#">
-            <div class="featured-item">
-              <div class="featured-heading">
-                <h3 class="tag">Books</h3>
-                <p class="heading--tertiary featured-title">
-                  Between Two Fires
-                </p>
-                <p class="featured-author">By Christopher Buehlman</p>
-              </div>
-              <p class="featured-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corrupti ducimus delectus fugiat distinctio, laudantium quasi
-                maiores magni doloremque labore harum?
-              </p>
-            </div>
-          </a>
-        </section>
+        <p class="post-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          voluptas deserunt, at quod corporis omnis magni recusandae ab qui
+          mollitia culpa vero quasi modi? Perspiciatis cum qui et commodi quia,
+          sint beatae eius amet quaerat. Illum voluptatum id nobis omnis,
+          reprehenderit quo iusto quod quidem provident dicta sapiente corporis
+          repellat repudiandae nisi praesentium vitae fugiat quasi rem
+          similique! Necessitatibus, facere in vel maiores voluptate, obcaecati
+          modi, distinctio suscipit cum aspernatur rerum ab minima quod facilis
+          reprehenderit beatae sapiente fugiat dolore? Delectus excepturi beatae
+          rerum necessitatibus ipsa nemo possimus aut consectetur! Perspiciatis
+          voluptatem totam, rerum est quibusdam nisi deserunt architecto itaque?
+        </p>
       </div>
+
+      <!-- ASIDE -->
+      <section class="section-featured container margin-btm-lg aside">
+        <div class="aside-title">
+          <p class="heading--tertiary">Featured Articles</p>
+        </div>
+        <a href="#">
+          <div class="aside-item">
+            <div class="featured-heading">
+              <h3 class="tag">Books</h3>
+              <p class="heading--tertiary featured-title">Dracula</p>
+              <p class="featured-author">By Bram Stoker</p>
+            </div>
+            <p class="featured-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
+              odio quos nostrum rem sed voluptate blanditiis enim dolorem
+              quibusdam deleniti.
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="aside-item">
+            <div class="featured-heading">
+              <h3 class="tag">Books</h3>
+              <p class="heading--tertiary featured-title">
+                A Tale of Two Cities
+              </p>
+              <p class="featured-author">By Charles Dickens</p>
+            </div>
+            <p class="featured-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio,
+              repellat at cum esse odit consectetur possimus iste eum saepe rem!
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="aside-item">
+            <div class="featured-heading">
+              <h3 class="tag">Books</h3>
+              <p class="heading--tertiary featured-title">
+                Notes from Underground
+              </p>
+              <p class="featured-author">By Fyodor Dostoevsky</p>
+            </div>
+            <p class="featured-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              odio ratione? Voluptates vero cumque reiciendis quidem ratione sed
+              minus corporis?
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="aside-item">
+            <div class="featured-heading">
+              <h3 class="tag">Books</h3>
+              <p class="heading--tertiary featured-title">Between Two Fires</p>
+              <p class="featured-author">By Christopher Buehlman</p>
+            </div>
+            <p class="featured-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+              ducimus delectus fugiat distinctio, laudantium quasi maiores magni
+              doloremque labore harum?
+            </p>
+          </div>
+        </a>
+      </section>
     </section>
 
     <!-----------------------------------------
@@ -223,6 +219,10 @@
           </a>
         </li>
       </ul>
+
+      <div>
+        <p>© 2022 Konreads, LLC. All rights reserved.</p>
+      </div>
 
       <ul class="list">
         <li>

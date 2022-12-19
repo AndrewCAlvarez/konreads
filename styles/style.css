@@ -331,7 +331,7 @@ a {
       rgba(17, 17, 17, 0.236),
       rgba(17, 17, 17, 1)
     ),
-    url(./images/books_4256x2554.jpg);
+    url(../images/books_4256x2554.jpg);
   background-size: cover;
   height: 63vh;
 }
@@ -347,7 +347,7 @@ a {
       rgba(17, 17, 17, 0.652),
       rgba(17, 17, 17, 1)
     ),
-    url(./images/stock/annie-spratt-lIWF2uHxs0Q-unsplash.jpg);
+    url(../images/stock/annie-spratt-lIWF2uHxs0Q-unsplash.jpg);
   background-size: cover;
   height: 35vh;
 }
@@ -398,6 +398,10 @@ a {
   margin-bottom: 3.2rem;
 }
 
+.post-content {
+  margin-bottom: 12.8rem;
+}
+
 .post-text {
   /* font-size: 2rem; */
   line-height: 2;
@@ -431,7 +435,7 @@ a {
       rgba(17, 17, 17, 0.652),
       rgba(17, 17, 17, 1)
     ),
-    url(./images/stock/annie-spratt-lIWF2uHxs0Q-unsplash.jpg);
+    url(../images/stock/annie-spratt-lIWF2uHxs0Q-unsplash.jpg);
   background-size: cover;
   height: 63vh;
 }
@@ -494,6 +498,7 @@ a {
   border-bottom: 1px solid var(--yellow-color-lighter);
   height: max-content;
   padding-bottom: 4rem;
+  width: 100%;
 }
 
 .aside-title {
@@ -540,6 +545,7 @@ a {
 }
 
 .about-img {
+  border-radius: 1px;
   align-self: center;
   justify-content: center;
 }

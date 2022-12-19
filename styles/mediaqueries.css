@@ -79,9 +79,21 @@ Spacing (px)
 ********************************************/
 
 /********************************************
-*  1400PX
+*  1500PX
 ********************************************/
-@media (max-width: px) {
+@media (max-width: 1500px) {
+  .post-body {
+    display: block;
+  }
+
+  .aside {
+    margin: 0;
+    border-bottom: none;
+  }
+
+  .aside-item {
+    width: 80%;
+  }
 }
 
 /********************************************
@@ -149,6 +161,11 @@ Spacing (px)
     margin-bottom: 8rem;
   }
 
+  .aside-item {
+    display: block;
+    margin-bottom: 8rem;
+  }
+
   .heading--about {
     font-size: 3.6rem;
     line-height: 1;
@@ -161,6 +178,10 @@ Spacing (px)
     color: var(--yellow-color-lighter);
     line-height: 2;
     text-indent: 2rem;
+  }
+
+  .aside-title {
+    margin-bottom: 4.8rem;
   }
 }
 
@@ -176,8 +197,28 @@ Spacing (px)
     display: flex;
   }
 
+  .post-header {
+    margin-bottom: 8rem;
+  }
+
   .post-text--hero {
     width: 80%;
+  }
+
+  .post-text {
+    width: 80%;
+  }
+
+  .post-quote {
+    width: 80%;
+  }
+
+  .text--lg {
+    font-size: 3rem;
+  }
+
+  .post-quote {
+    font-size: 3.2rem;
   }
 
   .heading--primary {
@@ -228,8 +269,28 @@ Spacing (px)
     margin-bottom: 36rem;
   }
 
+  .post-header {
+    margin-bottom: 4rem;
+  }
+
   .post-text--hero {
     width: 90%;
+  }
+
+  .post-text {
+    width: 90%;
+  }
+
+  .post-quote {
+    width: 90%;
+  }
+
+  .text--lg {
+    font-size: 2.4rem;
+  }
+
+  .post-quote {
+    font-size: 2.4rem;
   }
 
   .heading--primary {
@@ -253,6 +314,10 @@ Spacing (px)
     font-size: 3.6rem;
   }
 
+  .heading--tertiary {
+    font-size: 3rem;
+  }
+
   .book-author {
     font-size: 1.8rem;
   }
@@ -260,19 +325,34 @@ Spacing (px)
   .post-author-image {
     width: 3.6rem;
   }
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
 }
 
 /********************************************
 *  450PX (hamburger menu)
 ********************************************/
 @media (max-width: 450px) {
+  .heading--tertiary {
+    font-size: 2.4rem;
+  }
 }
 
 /********************************************
-*  411PX (XS devices)
+*  411PX (mobile devices)
 ********************************************/
 @media (max-width: 411px) {
   .post-text--hero {
+    width: 100%;
+  }
+
+  .post-text {
+    width: 100%;
+  }
+
+  .post-quote {
     width: 100%;
   }
 
@@ -286,6 +366,44 @@ Spacing (px)
 
   .book-author {
     font-size: 1.8rem;
+  }
+
+  .post-author-image {
+    width: 2rem;
+  }
+
+  .post-author-text {
+    font-size: 1.4rem;
+  }
+
+  .link--continue:link,
+  .link--continue:visited {
+    font-size: 1.8rem;
+  }
+}
+
+/********************************************
+*  401PX (mobile devices)
+********************************************/
+@media (max-width: 401px) {
+  .post-text--hero {
+    width: 100%;
+  }
+
+  .tag {
+    font-size: 1.6rem;
+  }
+
+  .heading--primary {
+    font-size: 3rem;
+  }
+
+  .heading--tertiary {
+    font-size: 2.3rem;
+  }
+
+  .book-author {
+    font-size: 1.6rem;
   }
 
   .post-author-image {

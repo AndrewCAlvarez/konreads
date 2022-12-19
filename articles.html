@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./articles.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/articles.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
     <title>Konreads</title>
   </head>
   <body>
@@ -20,14 +21,17 @@
       <div class="nav-title">
         <a class="link link--logo" href="index.html">Konreads</a>
       </div>
+
+      <button class="icon-menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
       <nav class="nav">
         <ul>
-          <li><a class="link link--nav" href="./articles.html">Articles</a></li>
           <li>
-            <a class="link link--nav" href="./index.html#section-about"
-              >About</a
-            >
+            <a class="link link--nav" href="./articles.html">Articles</a>
           </li>
+          <li><a class="link link--nav" href="#section-about">About</a></li>
         </ul>
       </nav>
     </header>
@@ -55,10 +59,12 @@
             culpa quo. Corrupti aliquid minima voluptate. Quasi unde, aut sunt
             soluta explicabo suscipit, voluptatibus sit dolores repudiandae
             dolore ullam. Quia quis voluptas tempore incidunt, maxime fuga!
-            Dolore aliquam reiciendis hic error voluptates ut illum autem
-            perspiciatis voluptas. Vero consequatur, dicta, in hic iure enim
-            velit quasi et rerum obcaecati ut minus blanditiis? Cumque
-            architecto fugit rerum quis debitis sapiente, sint odio.
+            <span class="hidden-mobile"
+              >Dolore aliquam reiciendis hic error voluptates ut illum autem
+              perspiciatis voluptas. Vero consequatur, dicta, in hic iure enim
+              velit quasi et rerum obcaecati ut minus blanditiis? Cumque
+              architecto fugit rerum quis debitis sapiente, sint odio.</span
+            >
           </p>
         </a>
         <a href="#" class="featured-item">
@@ -75,10 +81,12 @@
             culpa quo. Corrupti aliquid minima voluptate. Quasi unde, aut sunt
             soluta explicabo suscipit, voluptatibus sit dolores repudiandae
             dolore ullam. Quia quis voluptas tempore incidunt, maxime fuga!
-            Dolore aliquam reiciendis hic error voluptates ut illum autem
-            perspiciatis voluptas. Vero consequatur, dicta, in hic iure enim
-            velit quasi et rerum obcaecati ut minus blanditiis? Cumque
-            architecto fugit rerum quis debitis sapiente, sint odio.
+            <span class="hidden-mobile"
+              >Dolore aliquam reiciendis hic error voluptates ut illum autem
+              perspiciatis voluptas. Vero consequatur, dicta, in hic iure enim
+              velit quasi et rerum obcaecati ut minus blanditiis? Cumque
+              architecto fugit rerum quis debitis sapiente, sint odio.</span
+            >
           </p>
         </a>
         <a href="#" class="featured-item">
@@ -97,10 +105,12 @@
             culpa quo. Corrupti aliquid minima voluptate. Quasi unde, aut sunt
             soluta explicabo suscipit, voluptatibus sit dolores repudiandae
             dolore ullam. Quia quis voluptas tempore incidunt, maxime fuga!
-            Dolore aliquam reiciendis hic error voluptates ut illum autem
-            perspiciatis voluptas. Vero consequatur, dicta, in hic iure enim
-            velit quasi et rerum obcaecati ut minus blanditiis? Cumque
-            architecto fugit rerum quis debitis sapiente, sint odio.
+            <span class="hidden-mobile"
+              >Dolore aliquam reiciendis hic error voluptates ut illum autem
+              perspiciatis voluptas. Vero consequatur, dicta, in hic iure enim
+              velit quasi et rerum obcaecati ut minus blanditiis? Cumque
+              architecto fugit rerum quis debitis sapiente, sint odio.</span
+            >
           </p>
         </a>
         <a href="#" class="featured-item">
@@ -117,10 +127,12 @@
             culpa quo. Corrupti aliquid minima voluptate. Quasi unde, aut sunt
             soluta explicabo suscipit, voluptatibus sit dolores repudiandae
             dolore ullam. Quia quis voluptas tempore incidunt, maxime fuga!
-            Dolore aliquam reiciendis hic error voluptates ut illum autem
-            perspiciatis voluptas. Vero consequatur, dicta, in hic iure enim
-            velit quasi et rerum obcaecati ut minus blanditiis? Cumque
-            architecto fugit rerum quis debitis sapiente, sint odio.
+            <span class="hidden-mobile"
+              >Dolore aliquam reiciendis hic error voluptates ut illum autem
+              perspiciatis voluptas. Vero consequatur, dicta, in hic iure enim
+              velit quasi et rerum obcaecati ut minus blanditiis? Cumque
+              architecto fugit rerum quis debitis sapiente, sint odio.</span
+            >
           </p>
         </a>
       </section>
@@ -159,6 +171,10 @@
           </a>
         </li>
       </ul>
+
+      <div>
+        <p>© 2022 Konreads, LLC. All rights reserved.</p>
+      </div>
 
       <ul class="list">
         <li>
