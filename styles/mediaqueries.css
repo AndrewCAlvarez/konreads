@@ -215,6 +215,7 @@ Spacing (px)
 
   .post-text {
     width: 80%;
+    font-size: 1.6rem;
   }
 
   .post-quote {
@@ -287,6 +288,7 @@ Spacing (px)
 
   .post-text {
     width: 90%;
+    font-size: 1.4rem;
   }
 
   .post-quote {
